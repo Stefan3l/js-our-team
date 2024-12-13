@@ -1,0 +1,33 @@
+body {
+    font-family: "Fredoka", sans-serif;
+}
+
+header {
+    text-align: center;
+    color: #E53170;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.row .col {
+    width: calc((100% - 20px) / 3)
+}
+
+.card {
+    height: 300px;
+    width: 300px;
+    color: red;
+}
