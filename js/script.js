@@ -40,6 +40,9 @@ const teamMembers = [
 // DOm Elements
 
 const teamListElm = document.getElementById('team-list')
+const imgElm = document.getElementById('img')
+const nameMemberElm = document.getElementById('name')
+const emailElm = document.getElementById('email')
 
 // Stampo la card per ogni membro del team
 
@@ -47,17 +50,19 @@ let itemsList = "";
 for(let i = 0; i < teamMembers.length; i++) {
     const member = teamMembers[i];
     itemsList += `
-    <div class="card">
-        <div class="image">
-            <img src="./img/male1.png" alt="Marco Bianchi">
-        </div>
-        <div class="dati">
-            <h3>Marco Bianchi</h3>
-            <p>Designer</p>
-            <div class="email">
-                <span>marcobianchi@team.com</span>
-            </div>
-        </div>
+    <div class="col">
+          <div class="card">
+              <div class="image">
+                  <img src="./${member.img}" alt="${member.name}">
+              </div>
+              <div class="dati">
+                  <h3>${member.name}</h3>
+                  <p>${member.role}</p>
+                  <div class="email">
+                      <span>${member.email}</span>
+                  </div>
+              </div>
+          </div>
     </div>`
 }
 teamListElm.innerHTML = itemsList;
