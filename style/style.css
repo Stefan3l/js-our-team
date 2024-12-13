@@ -12,22 +12,50 @@ header {
     margin: auto;
 }
 
-p {
+.text-description {
     text-align: center;
+    margin-top: 70px;
+    font-size: 18px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 10px;
+    margin-top: 60px;
 }
 
 .row .col {
     width: calc((100% - 20px) / 3)
+    
 }
 
 .card {
-    height: 300px;
-    width: 300px;
-    color: red;
+    display: flex;
+    background-color: black;
+    color: #fff;
 }
+
+.dati {
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+img {
+    width: 120px;
+    height: 100%;
+}
+
+h3 {
+    font-size: large;
+    font-weight: 800;
+}
+
+.email {
+    color: #6ECBF2;
+}
+
+
+
+
