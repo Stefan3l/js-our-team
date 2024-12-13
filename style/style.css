@@ -26,8 +26,8 @@ header {
     margin-top: 60px;
 }
 
-.row .col {
-    width: calc((100% - 20px) / 3)
+.col {
+    width: calc((100% - 10px) / 3)
     
 }
 
